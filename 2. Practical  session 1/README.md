@@ -24,9 +24,7 @@ In this session, we are going to discuss few things at beginner level like why w
 - Provides Documentation
 - More confident when you refactor
 
-
-</hr>
-
+<hr/>
 
 ### Popular Testing Frameworks for nodejs
 - **Mocha :** This is the core and very popular framework for nodejs,  browser testing, asynchronous testing, test coverage report and many more. 
@@ -69,6 +67,11 @@ npm Install chai --g //install package globally
 
 ```
 - Create folder **test** under your project directory
+
+<hr/>
+
+### Practical Example
+
 - Create app.js (or any other name) inside test directory & include chai like below.
 
 ```sh
