@@ -130,5 +130,5 @@ const validateEmailId = (email) => {//let's consider this is production code (fr
 
 Have a look into below image how unit test should work on your production code.
 
-![alt text](https://github.com/narayansharma91/TDD_with_node/blob/master/2.%20Practical%20%20session%201/images/unit_test.png)
+![alt text](https://github.com/narayansharma91/node_tdd_sessions/blob/master/Session%202:%20Practical/images/unit_test.png)
 
