@@ -1,4 +1,4 @@
-# TDD Practical Session 1
+# TDD Session 2
 In this session, we are going to discuss few things at beginner level like why we need to write UNIT Test? How to configure/write unit test with popular testing framework along with the introduction of TDD.
 
 
