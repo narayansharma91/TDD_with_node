@@ -11,6 +11,21 @@ In this session, we are going to discuss few things at beginner level like why w
 
 <hr/>
 
+### Introduction of TDD, Unit Test and benifits of unit Test.
+
+**TDD** : **T**est **D**riven **D**evelopment is an innovative software development approach/process where tests are written, before writing the minimum of code required for the test to be fulfilled. 
+
+**UNIT TESTING** : Unit Testing is a level of software testing where individual units/components of a software are tested through testing framework.
+
+#### Benifits of Unit Testing
+- Quality of Code
+- Finds Software Bugs Early
+- Refactor Code
+- Provides Documentation
+- More confident when you refactor
+
+<hr/>
+
 ### Popular Testing Frameworks for nodejs
 - **Mocha :** This is the core and very popular framework for nodejs,  browser testing, asynchronous testing, test coverage report and many more. 
 
@@ -52,6 +67,11 @@ npm Install chai --g //install package globally
 
 ```
 - Create folder **test** under your project directory
+
+<hr/>
+
+### Practical Example
+
 - Create app.js (or any other name) inside test directory & include chai like below.
 
 ```sh
@@ -107,10 +127,6 @@ const validateEmailId = (email) => {//let's consider this is production code (fr
 
 ```
 - Type `npm run test` from terminal. You will see all test cases will pass.
-
-**TDD** is an innovative software development approach/process where tests are written, before writing the minimum of code required for the test to be fulfilled. 
-
-**UNIT TESTING** is a level of software testing where individual units/components of a software are tested through testing framework.
 
 Have a look into below image how unit test should work on your production code.
 
