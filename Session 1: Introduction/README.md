@@ -23,6 +23,8 @@
 &nbsp; &nbsp; A unit is the smallest testable part of software. Unit testing is a level of software testing where individual units/ components of a software are tested through testing framework. Unit Test is the part of TDD. 
 
 
+![alt text](https://github.com/narayansharma91/node_tdd_sessions/blob/master/Session%202:%20Practical/images/unit_test.png)
+
 #### Benefits of implementing automated unit test on your project.
 - Clean code
 - Reusability & modular code
