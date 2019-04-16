@@ -4,8 +4,9 @@ I've divided the whole TDD session into six sub sessions. Where the first 2 sess
 Moreover, you can check focus points for the individual session are given below.
 
 ## Session 1: Introduction
-- Difference between TDD/Unit Testing & Manual testing.
-- How TDD works
+- Introduction of TDD
+- TDD workflow.
+- Introduction of Unit Testing.
 - Benefits of implementing automated unit test on your project.
 
 ## Session 2: Practical
