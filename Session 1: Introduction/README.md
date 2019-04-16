@@ -10,3 +10,7 @@ TDD is an innovative software development approach/process(test first) where tes
 - The test should fail.
 - Write minimal code to pass the test.
 - Refactor the code.
+
+![alt text](https://github.com/narayansharma91/node_tdd_sessions/blob/master/Session%201:%20Introduction/images/TDD_process.png)
+
+
