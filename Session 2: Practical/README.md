@@ -128,7 +128,18 @@ const validateEmailId = (email) => {//let's consider this is production code (fr
 ```
 - Type `npm run test` from terminal. You will see all test cases will pass.
 
+
 Have a look into below image how unit test should work on your production code.
 
 ![alt text](https://github.com/narayansharma91/node_tdd_sessions/blob/master/Session%202:%20Practical/images/unit_test.png)
 
+
+</hr>
+
+
+### Homework
+Add following more functionalities/capabilities to existing query builder on **example3.js**
+- Should able to add **join** (left, right, cross etc).
+- Should able to add **limit**.
+- Should able to add **group by**.
+- Should able to add **or** and **and** conditions.
