@@ -134,7 +134,7 @@ Have a look into below image how unit test should work on your production code.
 ![alt text](https://github.com/narayansharma91/node_tdd_sessions/blob/master/Session%202:%20Practical/images/unit_test.png)
 
 
-</hr>
+<hr/>
 
 
 ### Homework
