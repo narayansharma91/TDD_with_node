@@ -211,7 +211,7 @@ module.exports = {
     })
 ```
 
-3. Should able to add single **where condition**.
+3. Should be able to add single **where condition**.
 
 **app.js**
 
@@ -224,14 +224,14 @@ const getSqlQuery = (table, columns = [], where = []) => {
 ```
 **test/app.js**
 ```
-     it('should able to add single where conditions', () => {
+     it('should be able to add single where conditions', () => {
         assert.equal('select * from users where email=abc@gmail.com', getSqlQuery('users', [], [{
             'email': 'abc@gmail.com'
         }]));
     })
 ```
 
-4. Should able to manage **multiple where conditions**.
+4. Should be able to manage **multiple where conditions**.
 
 **app.js**
 
@@ -251,7 +251,7 @@ const getSqlQuery = (table, columns = [], where = []) => {
 **test/app.js**
 
 ```
-    it('should able to manage multiple where conditions', () => {
+    it('should be able to manage multiple where conditions', () => {
         const sql = getSqlQuery('users', [],
             [
                 {
@@ -271,29 +271,30 @@ const getSqlQuery = (table, columns = [], where = []) => {
 
 ### Homework
 Add following more functionalities/capabilities to existing query builder on **example4.js**
-- Should able to add **join** (left, right, cross etc).
+- Should be able to add **join** (left, right, cross etc).
+
 Acceptance Criteria: If main table is users and you want to join users table with user_types table, Your query should look like below.
 ```
-it('should able to join tables', () => {
+it('should be able to join tables', () => {
         assert.equal('select * from users join user_types on users.user_type_id=user_types.id', getSqlQuery('users', param2, param3);
     })
     
 ```
 
-- Should able to add **limit**.
+- Should be able to add **limit**.
 
 Acceptance Criteria: If your table is users you want to fetch only 10 results from users table, your query should look like below.
 ```
-it('should able to join tables', () => {
+it('should be able to limit the results', () => {
         assert.equal('select * from users limit 10', getSqlQuery('users', param2, param3);
     })
 ```
 
-- Should able to **sort data by column**.
+- Should be able to **sort data by column**.
 
 Acceptance Criteria: If your table is users you want to order records by user name, your query should look like below.
 ```
-it('should able to join tables', () => {
+it('should be able to order results', () => {
         assert.equal('select * from users ORDER BY name asc', getSqlQuery('users', param2, param3 etc);
     })
 ```
