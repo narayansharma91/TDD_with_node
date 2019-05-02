@@ -1,9 +1,21 @@
-const { assert } = require('chai');
-const app = require('./../app');
+const {
+    assert
+} = require('chai');
+const { describe, it } = require('mocha');
 
-describe('Example 2', function() {
-    it('should sum value', function() {
-        assert.equal(app.sum(2, 4), 6);
+describe('Test foo', () => {
+    it('should pass test cases', () => {
+        assert.equal('hi', returnHi());
     })
- })
- 
+    it('should not pass test cases', () => {
+        assert.equal('hi', returnHello());
+    })
+})
+
+function returnHi() {
+    return 'hi';
+}
+
+function returnHello() {
+    return 'hello'
+}
