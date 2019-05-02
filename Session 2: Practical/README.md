@@ -5,7 +5,7 @@ In this session, we are going to discuss few important things at beginner level 
 ### Focus Points
 - Introduction, Benefits of writing unit test on your project.
 - Configure suitable testing framework for your NODEJS project.
-- Examples of **UNIT TESTING**
+- Examples of **Unit Testing**
 
 <hr/>
 
@@ -273,7 +273,7 @@ const getSqlQuery = (table, columns = [], where = []) => {
 Add following more functionalities/capabilities to existing query builder on **example4.js**
 - Should be able to add **join** (left, right, cross etc).
 
-Acceptance Criteria: If main table is users and you want to join users table with user_types table, Your query should look like below.
+**Acceptance Criteria:** If main table is users and you want to join users table with user_types table, Your query should look like below.
 ```
 it('should be able to join tables', () => {
         assert.equal('select * from users join user_types on users.user_type_id=user_types.id', getSqlQuery('users', param2, param3);
@@ -283,7 +283,7 @@ it('should be able to join tables', () => {
 
 - Should be able to add **limit**.
 
-Acceptance Criteria: If your table is users you want to fetch only 10 results from users table, your query should look like below.
+**Acceptance Criteria:** If your table is users you want to fetch only 10 results from users table, your query should look like below.
 ```
 it('should be able to limit the results', () => {
         assert.equal('select * from users limit 10', getSqlQuery('users', param2, param3);
@@ -292,10 +292,19 @@ it('should be able to limit the results', () => {
 
 - Should be able to **sort data by column**.
 
-Acceptance Criteria: If your table is users you want to order records by user name, your query should look like below.
+**Acceptance Criteria:** If your table is users you want to order records by user name, your query should look like below.
 ```
 it('should be able to order results', () => {
         assert.equal('select * from users ORDER BY name asc', getSqlQuery('users', param2, param3 etc);
+    })
+```
+
+- Should be able to **Group by column**.
+
+**Acceptance Criteria:** If your table is users you want to group records by name, your query should look like below.
+```
+it('should be able to groups results', () => {
+        assert.equal('select * from users group by name asc', getSqlQuery('users', param2, param3 etc);
     })
 ```
 
