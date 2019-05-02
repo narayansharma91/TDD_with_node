@@ -31,7 +31,7 @@ As part of 3 months TDD session conducted by ucreate, we have divided the whole 
 - Advantages of writing feature test over unit test.
 - List of feature test framework.
 
-## Session 3: Practical
+## Session 6: Practical
 - Configure feature test framework on your project.
 - Write a test code that validates your module/feature.
 - More details about framework methods. 
