@@ -1,5 +1,5 @@
 # TDD Session 2
-In this session, we are going to discuss few important things at beginner level including benifits of writing unit test, configure.write unit test with popular testing framework along with the introduction of TDD.
+In this session, we are going to discuss few important things at beginner level including benifits of writing unit test, configure and write unit test with popular testing framework along with the introduction of TDD.
 
 
 ### Focus Points
@@ -13,7 +13,7 @@ In this session, we are going to discuss few important things at beginner level 
 
 **TDD** : **T**est **D**riven **D**evelopment is an innovative software development approach/process where tests are written, before writing the minimum of code required for the test to be fulfilled. 
 
-**UNIT TESTING** : Unit Testing is a level of software testing where individual units/components of a software are tested through testing framework.
+**Unit Testing** : Unit Testing is a level of software testing where individual units/components of a software are tested through testing framework.
 
 #### Benifits of writing Unit Testing
 - Improve quality of code
@@ -70,7 +70,7 @@ npm Install chai --g //install package globally
 ### Practical Example 1
 Write a simple structure for Unit Test
 
-- Create app.js (or any other name) inside test directory & include chai like below.
+- Create **app.js** (or any other name) inside test directory & include chai and mocha like below.
 
 ```sh
 const { assert } = require('chai');
@@ -160,13 +160,13 @@ describe('Example 3', function() {
  })
 
 ```
-- Type `npm run test` from terminal. You will see all test cases will pass.
+- Type `npm run test` from terminal. You will see above test cases will pass.
 
 
 <hr/>
 
 ### Practical Example 4
-Write a query builder function and test cases to validate following below capabilities of query builder.
+Write a query builder function and test cases to validate following capabilities of query builder.
 1. Generate sql query to **select all the columns** from specific table if columns doesn't defined.
 **app.js**
 
@@ -298,4 +298,10 @@ it('should able to join tables', () => {
     })
 ```
 
+### Instructions while writing Unit Test
+- No if condition in test case
+- Never write code before unit test
+- Test should be independent
+- Use different database for testing
 
+Thanks.
