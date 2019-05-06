@@ -308,6 +308,10 @@ it('should be able to groups results', () => {
     })
 ```
 
+
+
+<hr/>
+
 ### Instructions while writing Unit Test
 - No if condition in test case
 - Never write code before unit test
