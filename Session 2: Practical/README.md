@@ -277,7 +277,7 @@ const getSqlQuery = (table, columns = [], where = []) => {
 Add following more functionalities/capabilities to existing query builder on **example4.js**
 - Generate a select query to select specific columns from a table, with order by on a column
 
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;**Acceptance Creteria:** The table name is `products` and the columns required to be fetched are `id` and `name` and sorted as descending by `id`.
+&nbsp; &nbsp; **Acceptance Creteria:** The table name is `products` and the columns required to be fetched are `id` and `name` and sorted as descending by `id`.
 - Generate a select query to select all columns from table with order by multiple columns
 
 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; **Acceptance Creteria:** The table name is `products` and the columns required to be ordered are `name` and `category` and sorted as ascending by `name` and `category`.
