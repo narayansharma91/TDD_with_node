@@ -5,7 +5,7 @@ In this session, we are going to discuss few important things at beginner level 
 ### Focus Points
 - Introduction, Benefits of writing unit test on your project.
 - Configure suitable testing framework for your NODEJS project.
-- Examples of **UNIT TESTING**
+- Examples of **Unit Testing**
 
 <hr/>
 
@@ -270,10 +270,64 @@ const getSqlQuery = (table, columns = [], where = []) => {
 
 
 ### Homework
+
+
+
+
 Add following more functionalities/capabilities to existing query builder on **example4.js**
+- Generate a select query to select specific columns from a table, with order by on a column
+**Acceptance Creteria:** The table name is `products` and the columns required to be fetched are id and name and sorted as descending by id.
+- Generate a select query to select all columns from table with order by multiple columns
+**Acceptance Creteria:** The table name is `products` and the columns required to be ordered are `name` and `category` and sorted as ascending by `name` and `category`.
+- Generate a select query to select specific columns from a table, with order by on a column - with capitalized keywords, and correct spacings.
+**Acceptance Creteria:** The table name is `products` and the columns required to be fetched are `id` and `name` and sorted as descending by `id` with capitalized keywords like SELECT, FROM, ORDER BY
+- Should be able to add **limit**.
+**Acceptance Criteria:** If your table is users you want to fetch only 10 results from `users` table.
+- Generate a query that limits the result from products table to 6 and offset is 5
+**Acceptance Criteria:** Your table is products you want to fetch only 6 results from products table skipping the first 5 results.
+- Generate a select query to get all the columns of table with a count column that give the total number of products
+**Acceptance Criteria:** Your table is products and you want to fetch all the columns of product along with the toal number of products.
+- Generate a select query to get the product with maximum cost
+**Acceptance Criteria:** Your table is products and you want to fetch a product from the table that has maximum cost.
+- Generate a select query to get the cost of products with group by
+**Acceptance Criteria:** Your table is products and you want to get the unique values of cost which can be done by group by.
+- Generate a query to get all the unique products in the table
+**Acceptance Criteria:** Your table is products and you want to get all the unique products of the table using DISTINCT name.
+- Generate a query with a table joined with other table
+**Acceptance Criteria:** The main table is products and you want to join products table with categories table.
+- Generate an insert query to insert a row with name, cost, color
+**Acceptance Criteria:** The main table is products and you want to insert a row with values into name, age and color.
+- Generate an insert query to insert multiple rows of values with column : name, cost and color.
+**Acceptance Criteria:** The main table is products and you want to insert 3 rows with values into name, age and color.
+- Generate an insert query to insert a row with name and cost and default color as red.
+**Acceptance Criteria:** The main table is products and you want to insert a rows with values into name, age and and default value of color as red.
+- Generate an update query to update a row of products with where condition on the name of product
+**Acceptance Criteria:** The main table is products and you want to update a row with name apple to orange.
+- Generate an update query to update all the products color to black whose color is red
+**Acceptance Criteria:** The main table is products and you want to update all the rows of table whose color is red to black.
+- Generate an update query to update the cost of products to their default value of 100.
+**Acceptance Criteria:** The main table is products and you want to update all the cost of products to the default cost of 100.
+- Generate an update query to update all the products color to pink
+**Acceptance Criteria:** The main table is products and you want to update all the cost of products to the default cost of 100.
+- Generate a delete query to delete the product whose name is abc
+**Acceptance Criteria:** The main table is products and you want to delete a product with name abc.
+- Generate a delete query to delete the products whose cost is greater than 500
+**Acceptance Criteria:** The main table is products and you want to delete all the products whose cost is greater than 500.
+- Generate a delete query to delete all the products
+**Acceptance Criteria:** The main table is products and you want to delete all the products.
+
+
+
+
+
+
+
+
+
+
 - Should be able to add **join** (left, right, cross etc).
 
-Acceptance Criteria: If main table is users and you want to join users table with user_types table, Your query should look like below.
+**Acceptance Criteria:** If main table is users and you want to join users table with user_types table, Your query should look like below.
 ```
 it('should be able to join tables', () => {
         assert.equal('select * from users join user_types on users.user_type_id=user_types.id', getSqlQuery('users', param2, param3);
@@ -281,23 +335,29 @@ it('should be able to join tables', () => {
     
 ```
 
-- Should be able to add **limit**.
 
-Acceptance Criteria: If your table is users you want to fetch only 10 results from users table, your query should look like below.
-```
-it('should be able to limit the results', () => {
-        assert.equal('select * from users limit 10', getSqlQuery('users', param2, param3);
-    })
-```
 
 - Should be able to **sort data by column**.
 
-Acceptance Criteria: If your table is users you want to order records by user name, your query should look like below.
+**Acceptance Criteria:** If your table is users you want to order records by user name, your query should look like below.
 ```
 it('should be able to order results', () => {
         assert.equal('select * from users ORDER BY name asc', getSqlQuery('users', param2, param3 etc);
     })
 ```
+
+- Should be able to **Group by column**.
+
+**Acceptance Criteria:** If your table is users you want to group records by name, your query should look like below.
+```
+it('should be able to groups results', () => {
+        assert.equal('select * from users group by name asc', getSqlQuery('users', param2, param3 etc);
+    })
+```
+
+
+
+<hr/>
 
 ### Instructions while writing Unit Test
 - No if condition in test case
