@@ -5,18 +5,16 @@ const {
 
 var assert = require('assert');
 const {
-    sequelize,
-    User
-} = require('./../models/index');
-before(async () => {
-    await sequelize.drop();
-    await sequelize.sync({
-        force: true
-    });
-})
+    createUser
+} = require('./../services/users');
 
-describe('Test Suites', async () => {
-    it('first Test cases', () => {
-      //your test case will goes here
+describe('Users Registration', async () => {
+    it('Create User', async () => {
+        const userInfo = await createUser({
+            'email': 'sharmanarayan1991@gmail.com',
+            'firstName': 'narayan',
+            'lastName': 'sharma'
+        });
+        assert.ok(userInfo)
     })
 })
