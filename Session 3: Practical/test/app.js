@@ -1,12 +1,6 @@
-const {
-    describe,
-    it
-} = require('mocha');
-
+const { describe, it } = require('mocha');
 var assert = require('assert');
-const {
-    createUser
-} = require('./../services/users');
+const { createUser } = require('./../services/users');
 
 describe('Users Registration', async () => {
     it('Create User', async () => {
@@ -15,6 +9,6 @@ describe('Users Registration', async () => {
             'firstName': 'narayan',
             'lastName': 'sharma'
         });
-        assert.ok(userInfo)
+        assert.ok(userInfo);
     })
 })
