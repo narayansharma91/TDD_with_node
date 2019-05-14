@@ -14,7 +14,14 @@ In this session, we are going to discuss few important things at intermediate le
 <hr />
 
 ## Review previous session
-You all are requested to have a look into previous session questions and complete homework before going to start session three. 
+You all are requested to have a look into previous session questions and complete homework before going to start session three. Apart from this make sure you should know about few important concepts from previous session. 
+- What is TDD and Unit Test?
+- What are assertions?
+- what are the benefits of validating your logic using the unit test?
+- What are the popular nodejs frameworks for unit test?
+
+<hr />
+
 ## General terminologies in TDD
 **Fixtures** : A test fixture is a fixed state of a set of objects/data used as a baseline for running tests. The purpose of a test fixture is to ensure that there is a well known and fixed environment in which tests are run.
 **Uses of Fixtures**:
@@ -28,14 +35,18 @@ Faker is a Python package that generates fake data for you. It will help you to 
 **Use cases of Faker**: When building out applications, we will often need data to show off how it works. It won't be much of an application if all our tables are blank!
 
 &nbsp; &nbsp; Often, when we first start building out an application, we don't want to worry too much about the data. Having to create a database and fill it with sample data like users is an annoying step that is just in the way of creating an amazing app.
+<hr />
 
-**More important assertions**: These are the few important assertions available on nodejs default package `assert`. 
+## Few important assertions
+These are the few important assertions available on nodejs default package `assert`. 
 - `assert.equal`: The assert.equal() method tests if two values are equal, using the == operator.
 - `assert.notEqual`: The assert.notEqual() method tests if two values are not equal, using the == operator.
 - `assert.strictEqual`: The assert.strictEqual() method tests if two values are equal, using the === operator.
 - `assert.deepEqual`: The assert.deepEqual() method tests if two objects, and their child objects, are equal, using the == operator.
 - `assert.throws`: The assert.throws() method tests if given expression throw exception or not. 
 - `assert.ok`: The assert.ok() method tests if a given expression is true or not.
+
+<hr />
 
 **Project Setup**:
 All of you are requested to do some project setup before attend session. Few of the things you should consider are given below.
@@ -45,6 +56,8 @@ All of you are requested to do some project setup before attend session. Few of 
 
 The directory structure of your app should look like below.
 ![alt text](https://github.com/narayansharma91/repo_images/blob/master/node_sessions/project_structure.png)
+
+<hr />
 
 ## Unit test with DB interaction
 - Create user with firstName, lastName and email in database  (this script should be inside service folder)
@@ -72,6 +85,7 @@ describe('Users Registration', async () => {
     })
 })
 ```
+<hr />
 
 ## Homework (Assignments)
 
