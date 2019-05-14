@@ -88,6 +88,32 @@ describe('Users Registration', async () => {
 <hr />
 
 ## Homework (Assignments)
+- Store user information to database
+
+&nbsp; &nbsp; **Acceptance Criteria**
+
+    - There should be `userTypes` table in which value should be (`admin` and `user`) (you can use seeder for now)
+    - Columns name of `users` table should be `name`, `email` and `userTypeId` (`userTypeId` should be foriegn key relation with `userTypes` table)
+    - User information which you are trying to store into the database should be `fake` information which is provided by `faker` library.
+    - If I missed some columns value during store, It should be thrown exception and you should be handle proper assertion function to handle it.
+
+- Get user information from database
+
+&nbsp; &nbsp; **Acceptance Criteria**
+
+    - If I pass correct user id to service function it should return user information.
+    - If I pass incorrect user id to service function it should return exception and you should handle this using assertion function.
+
+
+- Update user information to database
+
+&nbsp; &nbsp; **Acceptance Criteria**
+
+    - If I pass correct user id along with user information (which I want to update) to service function it should return user information.
+    - If I pass incorrect user id along with user information (which I want to update) to service function it should return exception and you should handle this using assertion function.
+    
+
+
 
 
 
